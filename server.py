@@ -11,9 +11,9 @@ import re
 # --- 1. 请在这里修改您的配置信息 ---
 # ===================================================================
 # 务必替换为您的 DeepSeek API Key
-DEEPSEEK_API_KEY = "sk-4aabb6581fe84da89d3e81de8ab5386a"  
+DEEPSEEK_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"  
 # 务必替换为您 新的 VoceChat Bot API Key
-VOCECHAT_BOT_API_KEY = "064b014f599710cf0767bf28966bf8a276ac4411c60535e466a7453a64b84ed97b22756964223a392c226e6f6e6365223a22793772354f5a6468336d674141414141444a4b3454686c4c45477238584e514c227d" 
+VOCECHAT_BOT_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxx" 
 
 # !!重要!! 填入您这个新机器人的 User ID (一个数字)
 BOT_UID = 9
@@ -22,7 +22,7 @@ VOCECHAT_DOMAIN = "http://127.0.0.1:3000"
 
 # T4 算力服务器的公网访问地址 (frp 隧道地址)
 # 端口 6006 是您在 frpc.ini 中设置的 remote_port
-T4_SERVER_URL = "http://120.55.54.25:6006/execute" 
+T4_SERVER_URL = "http://xxxxx:6006/execute" 
 # ===================================================================
 
 
@@ -226,4 +226,5 @@ def send_message_to_vocechat(target_id, text, is_group=False):
 if __name__ == '__main__':
     # !!! 关键变更：使用新的端口 25000 !!!
     app.run(host='0.0.0.0', port=25000)
+
 
